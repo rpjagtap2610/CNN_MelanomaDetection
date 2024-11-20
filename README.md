@@ -82,9 +82,18 @@ Multiple models were created to bring the models to perform better
 - Model 2 on Augumented Data - Observations:
     1. With Data Augmentation layer added to the model, there is an improvement in model and is no longer overfitting. 
     2. Accuracy for both Training and Validation is less than 55% but the validation accuracy is better than training accuracy.
-    3. Losses are minimized 
+    3. Losses are minimized (loss: 1.3701 & val_loss: 1.3879)
 - Model 3 on given data and Augumented Data - Observations:
-    - 
+    1. Both training and validation accuracy has increased with combined data and model is not overfitting.
+    2. Validation Loss is higher than training loss. 
+    3. Final model paras
+        Training Accuracy  : 83.00%,   Loss: 0.4472
+        Validation Accuracy: 81.07%,   Loss: 0.6243
+    
+- Overfitting can be reduced by 
+    1. Data Augumentation - Make sure you have enough samples and there is no class imbalance
+    2. Dropout layers - Add the Dropout layers to get the smooth curve 
+    3. Batch Normalization - This helps in reducing the quantities of the coeff and helps convergence.
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
